@@ -145,8 +145,8 @@ return [
 		'App\Providers\EventServiceProvider',
 		'App\Providers\RouteServiceProvider',
 
-        // Custom
-        'JD\Cloudder\CloudderServiceProvider',
+		// Custom
+		'JD\Laradit\LaraditServiceProvider',
 
 	],
 
@@ -195,7 +195,7 @@ return [
 		'URL'       => 'Illuminate\Support\Facades\URL',
 		'Validator' => 'Illuminate\Support\Facades\Validator',
 		'View'      => 'Illuminate\Support\Facades\View',
-        'Cloudder'  => 'JD\Cloudder\Facades\Cloudder'
+    'Laradit'  => 'JD\Laradit\Facades\Laradit'
 
 	],
 
