@@ -5,21 +5,21 @@ use Symfony\Component\Console\Input\InputOption;
 use Symfony\Component\Console\Input\InputArgument;
 use JD\Laradit\Facades\Laradit;
 
-class LaraditAuthenticationCommand extends Command {
+class LaraditScriptAuthenticationCommand extends Command {
 
 	/**
 	 * The console command name.
 	 *
 	 * @var string
 	 */
-	protected $name = 'laradit:auth';
+	protected $name = 'laradit:script_auth';
 
 	/**
 	 * The console command description.
 	 *
 	 * @var string
 	 */
-	protected $description = 'Commands to test Laradit Auth';
+	protected $description = 'Commands to test Laradit Script Auth';
 
 	/**
 	 * Create a new command instance.
