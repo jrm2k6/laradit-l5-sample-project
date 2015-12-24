@@ -38,7 +38,8 @@ class LaraditAuthenticationCommand extends Command {
 	 */
 	public function fire()
 	{
-		$this->info(Laradit::getSecret());
+		$scriptAuth = Laradit::getScriptAuthManager();
+		$this->info($scriptAuth->getRequestToken()->getBody()->getContents());
 	}
 
 	/**
