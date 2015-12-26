@@ -4,23 +4,21 @@ use Illuminate\Console\Command;
 use Symfony\Component\Console\Input\InputOption;
 use Symfony\Component\Console\Input\InputArgument;
 
-use JD\Laradit\Facades\LaraditAuth;
-
-class LaraditScriptAuthenticationCommand extends Command {
+class LaraditUserProfileCommand extends Command {
 
 	/**
 	 * The console command name.
 	 *
 	 * @var string
 	 */
-	protected $name = 'laradit:script_auth';
+	protected $name = 'laradit:user_profile';
 
 	/**
 	 * The console command description.
 	 *
 	 * @var string
 	 */
-	protected $description = 'Commands to test Laradit Script Auth';
+	protected $description = 'Command to get user resources';
 
 	/**
 	 * Create a new command instance.
@@ -39,8 +37,7 @@ class LaraditScriptAuthenticationCommand extends Command {
 	 */
 	public function fire()
 	{
-		$scriptAuth = LaraditAuth::getScriptAuthenticationManager();
-		$this->info($scriptAuth->getRequestToken()->getBody()->getContents());
+		//
 	}
 
 	/**

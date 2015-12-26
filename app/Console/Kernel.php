@@ -12,6 +12,7 @@ class Kernel extends ConsoleKernel {
 	 */
 	protected $commands = [
 		'App\Console\Commands\LaraditScriptAuthenticationCommand',
+		'App\Console\Commands\LaraditUserProfileCommand',
 	];
 
 	/**

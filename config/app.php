@@ -146,8 +146,8 @@ return [
 		'App\Providers\RouteServiceProvider',
 
 		// Custom
-		'JD\Laradit\LaraditServiceProvider',
-
+		'JD\Laradit\LaraditAuthenticationServiceProvider',
+		'JD\Laradit\LaraditResourceServiceProvider'
 	],
 
 	/*
@@ -195,7 +195,8 @@ return [
 		'URL'       => 'Illuminate\Support\Facades\URL',
 		'Validator' => 'Illuminate\Support\Facades\Validator',
 		'View'      => 'Illuminate\Support\Facades\View',
-    'Laradit'  => 'JD\Laradit\Facades\Laradit'
+    	'Laradit'  => 'JD\Laradit\Facades\Laradit',
+		'LaraditAuth'  => 'JD\Laradit\Facades\LaraditAuth'
 
 	],
 
